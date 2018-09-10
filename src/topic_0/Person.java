@@ -65,4 +65,9 @@ public class Person {
 		this.eyeColor= eyeColor;
 		this.gender= gender;
 	}
+	public String Greeting() {
+		String sayHi = String.format("Hi, my name is %s, I'm %s years old.", this.getName(), this.getAge() ) ;
+		
+		return sayHi;
+	};
 }
