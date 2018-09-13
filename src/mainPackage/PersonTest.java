@@ -1,4 +1,4 @@
-package topic_0;
+package mainPackage;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.logging.Logger;

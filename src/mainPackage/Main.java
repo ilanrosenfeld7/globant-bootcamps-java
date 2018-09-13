@@ -1,8 +1,8 @@
-package topic_0;
+package mainPackage;
 import java.util.Scanner;
 
 import connection.*;
-
+import proxy.*;
 
 public class Main {
 	static Scanner scanner = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package topic_0;
+package mainPackage;
 
 public class Singleton {
 	  
