@@ -2,12 +2,13 @@ package mainPackage;
 
 public class Person {
 	private String name;
+	private String job;
 	private int age;
 	private int height;
 	private int weight;
 	private String eyeColor;
 	private String gender;
-	
+	private int phone_number;
 
 	public String getName() {
 		return name;
@@ -69,5 +70,21 @@ public class Person {
 		String sayHi = String.format("Hi, my name is %s, I'm %s years old.", this.getName(), this.getAge() ) ;
 		
 		return sayHi;
+	}
+
+	public String getJob() {
+		return job;
+	}
+
+	public void setJob(String job) {
+		this.job = job;
+	}
+
+	public int getPhone_number() {
+		return phone_number;
+	}
+
+	public void setPhone_number(int phone_number) {
+		this.phone_number = phone_number;
 	};
 }

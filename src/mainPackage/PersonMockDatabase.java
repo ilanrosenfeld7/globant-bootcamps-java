@@ -23,13 +23,20 @@ public class PersonMockDatabase{
 	l.info("database initialized");
 	
 	}
-	public String Greet(int ind) {
+	public String greet(int ind) {
+		l.info("Person greeting...");
 		String aux = PersonDB.get(ind).Greeting();
 		
 		return aux;}
 	public Person getOnePerson(int ind) {
+		l.info("returning single person information..");
 		Person onePerson = PersonDB.get(ind);
 		return onePerson;
 	}
+	public void addPerson(Person value) {
+		l.info("adding new person");
+		this.PersonDB.add(value);
+		
+	}
+	
 }
-// hacer base de datos !

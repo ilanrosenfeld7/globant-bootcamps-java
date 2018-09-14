@@ -12,18 +12,18 @@ public class Main {
 		  FactoryProducer Producer = new FactoryProducer();
 		  ConnectionFactory ConnFactory = null;
 	     //singleton of Person working
-	      Singleton object = Singleton.getInstance();
-	      object.showMessage();
-	      
-	      //object Person greeting and giving Gender 
-	      System.out.println("pick a person to Greet (0 to 4) ");
-	      num1 = scanner.nextInt();
-	      System.out.println(object.Greet(num1));
-	      System.out.println("pick a person to see his/her Gender (0 to 4) ");
-	      num2= scanner.nextInt();
-	      Person p = object.getPerson(num2);
-	      System.out.println("gender " + p.getGender());
-	      
+//	      Singleton object = Singleton.getInstance();
+//	      object.showMessage();
+//	      
+//	      //object Person greeting and giving Gender 
+//	      System.out.println("pick a person to Greet (0 to 4) ");
+//	      num1 = scanner.nextInt();
+//	      System.out.println(object.Greet(num1));
+//	      System.out.println("pick a person to see his/her Gender (0 to 4) ");
+//	      num2= scanner.nextInt();
+//	      Person p = object.getPerson(num2);
+//	      System.out.println("gender " + p.getGender());
+//	      
 	      // swiching different connection types (comment previous code to test)
 	      System.out.println("write your connection type (SQL/ NOSQL)");
 	      String ConType = scanner.nextLine();

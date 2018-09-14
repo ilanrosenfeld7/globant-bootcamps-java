@@ -20,7 +20,7 @@ public class Singleton {
 	}
 	
 	public String Greet (int num){
-		return pdb.Greet(num);
+		return pdb.greet(num);
 	}
 
 	public Person getPerson (int num) {
