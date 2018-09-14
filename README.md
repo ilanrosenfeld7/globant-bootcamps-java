@@ -1,5 +1,7 @@
-# Globant Java Bootcamp 2018
+﻿# Globant Java Bootcamp 2018
 ## Spring - REST - Git - Maven - Testing - RDB
+
+Group-1: Raverta, Claudio Marco (claudiorave). Perez, Jefferson.
 
 ![Globant](assets/globant.jpg)
 
