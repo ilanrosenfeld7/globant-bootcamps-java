@@ -1117,6 +1117,3 @@ Commit your practice code.
 
 → [index](#index)
 
-
-Group 3:
-Giorgio Tosti (giorger87)
