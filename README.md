@@ -1116,3 +1116,6 @@ Commit your practice code.
 *10. What is a Cache? Which type of NoSQL db does a cache imply?*
 
 → [index](#index)
+
+Grupo4
+Julieta Sanchez (julysanchez20)
