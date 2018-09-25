@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Shopping Cart</title>
+</head>
+
+<body>
+	<h2>Shopping Cart</h2>
+	<form action="/index" method="GET">
+		<p>Select product:</p>
+		<select name="product">
+			<option value="Water">Water</option>
+			<option value="Beer">Beer</option>
+		</select>
+		
+		<button type="submit">Add</button>
+	</form>
+	
+	 <p th:text="'You bought: ' + ${product}" />
+
+
+</body>
+</html>
