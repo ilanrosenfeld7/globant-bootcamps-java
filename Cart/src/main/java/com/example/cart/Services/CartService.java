@@ -1,8 +1,17 @@
-package com.example.cart;
+package com.example.cart.Services;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
+
 import org.springframework.stereotype.Service;
+
+import com.example.cart.Repositories.CartRepository;
+import com.example.cart.Resources.Cart;
+import com.example.cart.Resources.Product;
+import com.example.cart.Resources.ProductPurchase;
+import com.example.cart.Resources.ProductPurchaseDTO;
 
 @Service
 public class CartService {
@@ -22,9 +31,11 @@ public class CartService {
 		repository.save(cart);
 	}
 
-	public Cart addNewCart() {
-		Cart cart = new Cart();
+	public Cart addNewCart(ArrayList<ProductPurchase> productPurchase) {
+	
+		Cart cart = new Cart(productPurchase);
 		return repository.save(cart);
+	
 	}
 
 	public boolean deleteCart(Long Id) {
@@ -36,11 +47,11 @@ public class CartService {
 		}
 	}
 
-	public boolean addProduct(Long cartId, Long productId) {
-		Optional<Cart> cart = repository.findById(cartId);
+	public boolean addProduct(Long cartId, Long productId, int quantity) {
+		Optional<Cart> cart = this.getCart(cartId);
 		Product product = itemsService.getItem(productId);
 		if (product != null) {
-			cart.get().addProduct(product);
+			cart.get().addProduct(product, quantity);
 			return true;
 		} else {
 			return false;
@@ -48,11 +59,11 @@ public class CartService {
 
 	}
 
-	public boolean deleteProduct(Long cartId, Long productId) {
-		Optional<Cart> cart = repository.findById(cartId);
+	public boolean deleteProduct(Long cartId, Long productId, int quantity) {
+		Optional<Cart> cart = this.getCart(cartId);
 		Product product = itemsService.getItem(productId);
 		if (product != null) {
-			cart.get().addProduct(product);
+			cart.get().deleteProduct(product, quantity);
 			return true;
 		} else {
 			return false;
