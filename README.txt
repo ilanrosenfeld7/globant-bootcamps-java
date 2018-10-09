@@ -1,9 +1,12 @@
-This branch was created to upload final project of Group 3.
+Shopping Cart Service for Globant Bootcamp 2018
 
-Members of the group:
+Group 3:
+Agustin Cipollone
+Giorgio Tosti
+Nicolas Fernandez
 
-Giorgio Tosti (giorger87)
 
-Agustin Cipollone (aguscipo)
+To run project import as mvn existing project and run with mvn spring-boot:run
 
-Nicolás Fernandez (Nico996)
+
+To watch documentation after run with spring-boot, execute http://localhost:8080/swagger-ui.html#/
